@@ -153,7 +153,7 @@ if __name__ == "__main__":
     import asyncio
 
     async def main():
-        # Using CountInvocationPlugin as requested by the user, replacing LoggingPlugin to see specific logs
+       
         currency_runner = InMemoryRunner(agent=currency_agent, plugins=[CountInvocationPlugin()])
         _ = await currency_runner.run_debug(
             "I want to convert 500 US Dollars to Euros using my Platinum Credit Card. How much will I receive?"
